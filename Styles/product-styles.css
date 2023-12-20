@@ -1,0 +1,42 @@
+.hero {
+  margin-top: 12rem;
+}
+
+.hero .row {
+  margin-top: 15rem;
+}
+
+.body-type {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.col-4 {
+  width: 333px;
+  height: 150px;
+  flex-shrink: 0;
+  background-color: #010101;
+  margin: 2rem;
+}
+
+.body-type .row,
+.by-name .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.col-4 p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+
+  position: relative;
+  bottom: 50%;
+  left: 30%;
+}
