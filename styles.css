@@ -3,11 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 hr {
-  width: 250px;
+  width: 240px;
   height: 4px;
   flex-shrink: 0;
   background: rgba(0, 0, 0, 0.60);
@@ -32,6 +32,10 @@ h2 {
   line-height: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Hero & Navihations */
 header {
   background: url('../Images/Hero.png') lightgray 50% / cover no-repeat;
@@ -42,10 +46,6 @@ header {
 header.alternate-header {
   height: 40dvh;
 }
-
-/* header.alternate-header-two {
-  height: 55dvh;
-} */
 
 .hero {
   margin: 8rem 0;
@@ -160,6 +160,17 @@ header.alternate-header {
   margin-top: 84px;
 }
 
+.featured-cars {
+  background-color: #fff;
+
+  width: 342px;
+  height: 390px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
 .feature-title {
   margin-bottom: 3rem;
 }
@@ -181,6 +192,10 @@ header.alternate-header {
   color: #5F0F0F;
 }
 
+.featured a {
+  color: #FDB0B0;
+}
+
 .featured p {
   color: #000;
   font-family: Inria Sans;
@@ -200,16 +215,6 @@ header.alternate-header {
   border-radius: 4px 4px 0px 0px;
   mix-blend-mode: darken;
 
-}
-
-.col-4 {
-  width: 342px;
-  height: 390px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  background: rgba(251, 246, 246, 0.6);
-  margin-bottom: 1rem;
-  padding: 0;
 }
 
 img.icon {
@@ -395,9 +400,9 @@ p.value {
 p.copyright {
   color: #FFF;
   font-family: Inria Sans;
-  font-size: 9px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 35px;
   letter-spacing: 1.5px;
 }
@@ -424,41 +429,60 @@ p.copyright {
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
+  hr {
+    width: 150px;
+    height: 3px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  header {
+    height: 80dvh;
+  }
+
+  header.alternate-header {
+    height: 60dvh;
+  }
+
   .hero h1 {
     font-size: 30px;
-    /* text-align: center; */
     line-height: normal;
   }
 
   .hero p {
     font-size: 18px;
-    /* text-align: center; */
   }
 
-  /* .hero-button {
-    display: flex;
-    justify-content: center;
-  } */
-
   .hero {
-    margin-top: 10rem;
+    margin: 4rem .5rem;
+  }
+
+  .hero-button button {
+    font-size: 16px;
   }
 
   .hero .row {
     display: none;
   }
 
-  /* p.explore {
-    font-size: 10px;
+  .featured {
+    margin-top: 50px;
   }
 
-  .expolre {
-    position: absolute;
-    top: 90%;
-    left: 5%;
+  .featured-cars {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 
-  hr.explore-rec {
-    width: 4rem;
-  } */
+  img.car {
+    width: 100%;
+    height: auto;
+  }
 }
