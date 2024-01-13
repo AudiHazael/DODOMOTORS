@@ -162,12 +162,11 @@ header.alternate-header {
 
 .featured-cars {
   background-color: #fff;
-
-  width: 342px;
-  height: 390px;
+  width: 420px;
+  height: auto;
   flex-shrink: 0;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -186,6 +185,7 @@ header.alternate-header {
   display: flex;
   justify-content: start;
   align-items: start;
+  margin-bottom: 0;
 }
 
 .alternate-color {
@@ -209,12 +209,11 @@ header.alternate-header {
 .featured img {
   margin: 0;
   padding: 0;
-  width: 342px;
-  height: 254px;
+  width: 420px;
+  height: auto;
   flex-shrink: 0;
   border-radius: 4px 4px 0px 0px;
   mix-blend-mode: darken;
-
 }
 
 img.icon {
