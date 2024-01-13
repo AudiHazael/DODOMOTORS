@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@100;200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
+  background: #F6F6F6;
 }
 
 hr {
@@ -24,7 +25,7 @@ span.alternate-colorII {
 
 h2 {
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -32,19 +33,27 @@ h2 {
 }
 
 /* Hero & Navihations */
-.hero-section {
+header {
   background: url('../Images/Hero.png') lightgray 50% / cover no-repeat;
-  height: 100vh;
+  height: 75dvh;
   flex-shrink: 0;
 }
 
+header.alternate-header {
+  height: 40dvh;
+}
+
+/* header.alternate-header-two {
+  height: 55dvh;
+} */
+
 .hero {
-  margin-top: 10rem;
+  margin: 8rem 0;
 }
 
 .navbar-brand {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -58,8 +67,7 @@ h2 {
 .navbar-nav li.nav-item a.nav-link {
   color: #FFF;
   text-align: center;
-  font-family: 'Inter',
-    sans-serif;
+  font-family: Inria Sans;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -80,8 +88,7 @@ h2 {
 
 .hero h1 {
   color: #FFF;
-  /* text-align: center; */
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -90,82 +97,63 @@ h2 {
 
 .hero p {
   color: rgba(255, 255, 255, 0.80);
-  /* text-align: center; */
-  font-family: monteserrat;
+  font-family: Inria Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
 
   margin-top: 2rem;
 }
 
 .hero-button button {
-  width: 163px;
-  height: 37px;
-  flex-shrink: 0;
-  border: none;
-  border-radius: 4px;
+  display: inline-flex;
+  padding: 12px 0;
+  width: 294px;
+  justify-content: center;
+  align-items: center;
   background: #F6F6F6;
-  color: #000;
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 600;
+
+  color: #010101;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.205px;
 }
 
 .hero-button button:hover {
   background: #654646;
-}
-
-.hero-button {
-  /* display: flex;
-  justify-content: center; */
-  margin-top: 4rem;
+  color: #f6f6f6;
 }
 
 .hero .row {
-  margin-top: 12rem;
+  margin: 10rem 0 4rem 0;
   display: flex;
   justify-content: space-between;
 }
 
 .hero .row .col-3 {
-  /* padding: .5em; */
   border-bottom: 1px solid #ffffff3d;
 }
 
 .hero .row p {
-  font-weight: 100;
-  font-family: sans-serif;
-  font-size: 10px;
+  font-weight: 400;
+  font-family: Inria Sans;
+  font-size: 12px;
   line-height: 18px;
-  color: #f1f1f169;
+  color: #D2D2D2;
   margin: 0px;
   padding: 0px;
 }
 
 .hero .row p.title {
-  font-size: 12;
-  color: #f1f1f198;
-}
-
-/* p.explore {
-  font-size: 12px;
-  font-weight: lighter;
-  font-family: sans-serif;
-}
-
-.expolre {
-  margin-top: 6rem;
-}
-
-hr.explore-rec {
+  font-weight: 700;
+  font-size: 14;
   color: #f6f6f6;
-  width: 8rem;
-  height: 5px;
-  margin-top: 3rem;
-} */
+}
 
 /* Featured */
 .featured {
@@ -195,7 +183,7 @@ hr.explore-rec {
 
 .featured p {
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -238,7 +226,7 @@ img.car {
 p.money {
   margin-top: 2rem;
   color: #5F0F0F;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -249,7 +237,7 @@ p.money {
 p.description {
   width: 296px;
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -259,7 +247,7 @@ p.description {
 
 p.value {
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
@@ -270,7 +258,7 @@ p.value {
 /* About Us */
 .about-us p {
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -300,7 +288,7 @@ p.value {
 .testimonials p {
   flex-shrink: 0;
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -310,7 +298,7 @@ p.value {
 
 .testimonials h6 {
   color: #000;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -331,7 +319,7 @@ p.value {
 
 .contact-us h2 {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
@@ -340,7 +328,7 @@ p.value {
 
 .contact-us p {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -396,7 +384,7 @@ p.value {
 
 .footer p {
   color: #ffffffa6;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -406,7 +394,7 @@ p.value {
 
 p.copyright {
   color: #FFF;
-  font-family: Montserrat;
+  font-family: Inria Sans;
   font-size: 9px;
   font-style: normal;
   font-weight: 100;
